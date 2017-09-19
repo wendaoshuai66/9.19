@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<div class="box">
+		<div class="box3"></div>
+	</div>
+	<div class="box box1"></div>
+	<div class="box box1 box2"></div>
+	<div id="one"></div>
+	<script>
+	window.onload=function(){
+		let box=getClass('box')[0];
+		let box3=getClass('box3',box)
+		console.log(box3)
+		/*var box=getClass('box');
+		for(var i=0;i<box.length;i++){
+			box[i].innerText='这是box'
+		}*/
+		/*$('#one').innerText='one'*/
+	}
+    </script>
+</body>
+<script src="js/index.js"></script>
+</html>
+
